@@ -1,0 +1,313 @@
+:root {
+  --primary-color: #0077b6;
+  --primary-hover: #005f99;
+  --accent-color: #90e0ef;
+  --light-bg: #f0fdff;
+  --hover-bg: #dceeff;
+}
+
+.page-container {
+  max-width: 80vw;
+  margin: 4rem auto;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Compact form controls */
+.form-control,
+.selectpicker {
+  padding: 4px 8px !important;
+  font-size: 13px !important;
+}
+
+/* Label adjustments */
+label,
+.control-label {
+  font-size: 13px !important;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* Reduce spacing between form elements */
+.shiny-input-container {
+  margin-bottom: 10px;
+}
+
+/* Limit dropdown height and enable scroll */
+.dropdown-menu.inner {
+  max-height: 150px !important;
+  overflow-y: auto !important;
+}
+
+textarea.form-control {
+  font-size: 14px;
+  min-height: 150px;
+}
+.shiny-input-container {
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: #ffffff !important;
+  color: #1c1c1c;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+label,
+.control-label,
+.shiny-input-container {
+  color: #1c1c1c;
+  font-size: 15px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  color: var(--primary-color) !important;
+}
+
+.navbar-default {
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.btn-primary,
+.btn-success {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: var(--primary-hover);
+}
+
+.well,
+.panel {
+  background-color: #ffffff;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.selectize-input {
+  background-color: #ffffff !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+.checkbox label,
+.radio label {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.dropdown-menu {
+  background-color: #f0fdff;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-hover);
+}
+
+#main_navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hover-highlight {
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.hover-highlight:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--primary-hover);
+}
+
+*:focus {
+  outline: 2px dashed var(--primary-color);
+}
+
+/* Reduce padding and height of input fields and buttons */
+input[type='text'],
+input[type='number'],
+.selectize-input,
+.form-control,
+.picker__input,
+.shiny-input-container {
+  font-size: 13px;
+  padding: 5px 8px;
+  height: auto !important;
+}
+
+/* Compact buttons */
+.btn {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+/* Smaller labels */
+label,
+.control-label {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+/* Reduce spacing around input containers */
+.shiny-input-container {
+  margin-bottom: 8px;
+}
+.paper-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid var(--primary-color); /* Matches your existing panel style */
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex; /* Aligns checkbox and text side-by-side */
+  gap: 15px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative; /* Required for the contributor badge */
+}
+
+.paper-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 119, 182, 0.15); /* Soft blue shadow on hover */
+  border-color: var(--accent-color);
+}
+
+.paper-checkbox-container {
+  margin-top: 2px;
+  flex-shrink: 0; /* Prevents checkbox from getting squished */
+}
+
+.paper-content {
+  flex-grow: 1; /* Takes up the rest of the space */
+}
+
+.paper-card-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--primary-hover);
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.paper-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  column-gap: 15px;
+  margin-bottom: 6px;
+}
+
+.paper-meta-item {
+  flex: 1 1 30%; /* Gives columns breathing room */
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.metadata-light {
+  color: #6c757d; /* Dimmed label */
+  font-weight: 500;
+}
+
+.metadata-bold {
+  font-weight: 600; /* Bold data */
+  color: #1c1c1c;
+  margin-left: 4px;
+}
+
+/* The Contributor Badge in the top right */
+.contributor-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--light-bg); 
+  color: var(--primary-hover);
+  border: 1px solid var(--accent-color);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--primary-color);
+  border-collapse: collapse;
+  padding: 6px;
+}
+
+table {
+  max-width: 80vw;
+}
+
+.link-primary {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 4px 0;
+  text-decoration: underline;
+}
+
+.link-primary:hover {
+  color: var(--primary-hover);
+}
+
+.link-primary::after {
+  display: inline-block;
+  font-variant: normal;
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  line-height: 1;
+  content: '\f35d';
+  font-size: 14px;
+  margin-left: 4px;
+  vertical-align: 0;
+}
+
+/* shiny styling overrides */
+.shiny-input-container {
+  padding: 0;
+}
+
+.progress {
+  margin-bottom: 0;
+}
